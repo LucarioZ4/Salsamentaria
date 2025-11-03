@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Salsamentaria Artesanal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">🥩 Salsamentaria Artesanal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acerca-de.html">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrito.html">
+                            🛒 Carrito <span class="badge bg-danger" id="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="bg-success text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Contáctanos</h1>
+            <p class="lead">¿Tienes preguntas? Estamos aquí para ayudarte</p>
+        </div>
+    </header>
+
+    <!-- Información de Contacto -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <span style="font-size: 4rem;">📧</span>
+                            </div>
+                            <h4 class="text-success fw-bold">Email</h4>
+                            <p class="text-muted mb-1">info@salsamentaria.com</p>
+                            <p class="text-muted mb-0">ventas@salsamentaria.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <span style="font-size: 4rem;">📞</span>
+                            </div>
+                            <h4 class="text-success fw-bold">Teléfono</h4>
+                            <p class="text-muted mb-1">+57 300 123 4567</p>
+                            <p class="text-muted mb-0">Lun - Sáb: 8:00 AM - 6:00 PM</p>
+                            <p class="text-muted mb-0">Dom: 8:00 AM - 2:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <span style="font-size: 4rem;">📍</span>
+                            </div>
+                            <h4 class="text-success fw-bold">Ubicación</h4>
+                            <p class="text-muted mb-1">Calle Principal #123-45</p>
+                            <p class="text-muted mb-0">Valledupar, Cesar</p>
+                            <p class="text-muted mb-0">Colombia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card shadow border-0">
+                        <div class="card-header bg-success text-white py-3">
+                            <h3 class="mb-0 fw-bold">Envíanos un Mensaje</h3>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="text-muted mb-4">Completa el formulario y nos pondremos en contacto contigo lo antes posible</p>
+                            <form id="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label fw-bold">Nombre Completo *</label>
+                                        <input type="text" class="form-control" id="name" name="name" required placeholder="Ej: Juan Pérez">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label fw-bold">Correo Electrónico *</label>
+                                        <input type="email" class="form-control" id="email" name="email" required placeholder="tu@email.com">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="phone" class="form-label fw-bold">Teléfono</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="+57 300 123 4567">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="subject" class="form-label fw-bold">Asunto *</label>
+                                        <select class="form-select" id="subject" name="subject" required>
+                                            <option value="">Selecciona un asunto</option>
+                                            <option value="consulta">Consulta General</option>
+                                            <option value="producto">Información de Producto</option>
+                                            <option value="pedido">Realizar un Pedido</option>
+                                            <option value="sugerencia">Sugerencia</option>
+                                            <option value="queja">Queja o Reclamo</option>
+                                            <option value="otro">Otro</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label fw-bold">Mensaje *</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                                </div>
+                                <div class="mb-4 form-check">
+                                    <input type="checkbox" class="form-check-input" id="privacy" required>
+                                    <label class="form-check-label" for="privacy">
+                                        Acepto la política de privacidad y el tratamiento de mis datos personales
+                                    </label>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-success btn-lg">
+                                        Enviar Mensaje
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-2 text-success fw-bold">Preguntas Frecuentes</h2>
+            <p class="text-center text-muted mb-5">Encuentra respuestas rápidas a las dudas más comunes</p>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-success text-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    ¿Cuál es el tiempo de entrega?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="mb-0">En Valledupar y sus alrededores, el tiempo de entrega es de 24 a 48 horas. Todos nuestros productos se entregan con cadena de frío garantizada para preservar su frescura. Te enviaremos una notificación cuando tu pedido esté en camino.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    ¿Hacen envíos a otras ciudades?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="mb-0">Actualmente realizamos entregas en Valledupar y municipios cercanos del departamento del Cesar. Estamos trabajando para expandir nuestro servicio de entrega a otras ciudades de la región Caribe. Contáctanos para consultar disponibilidad en tu zona.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    ¿Cuál es el pedido mínimo?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="mb-0">No tenemos un monto mínimo de compra. Sin embargo, el costo de envío puede variar según la zona y el peso del pedido. Compras superiores a $50.000 pesos tienen envío gratuito dentro de Valledupar.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    ¿Los productos son 100% artesanales?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="mb-0">Sí, todos nuestros productos son elaborados de forma artesanal siguiendo recetas tradicionales familiares. No utilizamos conservantes artificiales ni aditivos químicos. Cada producto es elaborado por nuestros maestros artesanos con más de 35 años de experiencia.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    ¿Qué métodos de pago aceptan?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="mb-0">Aceptamos múltiples métodos de pago: efectivo contra entrega, transferencias bancarias, tarjetas de crédito y débito (Visa, Mastercard), y pagos por Nequi o Daviplata. Todos nuestros procesos de pago son seguros y confiables.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                    ¿Cómo conservar los productos?
+                                </button>
+                            </h2>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="mb-0">Todos nuestros productos deben mantenerse refrigerados entre 0°C y 4°C. Los embutidos frescos tienen una duración de 5-7 días refrigerados. Los productos se pueden congelar para extender su vida útil hasta 3 meses. Incluimos instrucciones de conservación con cada pedido.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Redes Sociales -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h3 class="mb-2 text-success fw-bold">Síguenos en Redes Sociales</h3>
+            <p class="text-muted mb-4">Mantente al día con nuestras promociones y novedades</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="#" class="btn btn-outline-success btn-lg rounded-circle" style="width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;" title="Facebook">
+                    <span style="font-size: 28px;">📘</span>
+                </a>
+                <a href="#" class="btn btn-outline-success btn-lg rounded-circle" style="width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;" title="Instagram">
+                    <span style="font-size: 28px;">📷</span>
+                </a>
+                <a href="#" class="btn btn-outline-success btn-lg rounded-circle" style="width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;" title="WhatsApp">
+                    <span style="font-size: 28px;">💬</span>
+                </a>
+                <a href="#" class="btn btn-outline-success btn-lg rounded-circle" style="width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;" title="TikTok">
+                    <span style="font-size: 28px;">🎵</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa (Opcional - Placeholder) -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h3 class="text-center mb-4 text-success fw-bold">Encuéntranos</h3>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body p-0">
+                            <div class="bg-secondary text-white text-center py-5" style="min-height: 400px; display: flex; align-items: center; justify-content: center;">
+                                <div>
+                                    <span style="font-size: 5rem;">📍</span>
+                                    <h4 class="mt-3">Mapa de Ubicación</h4>
+                                    <p class="mb-0">Calle Principal #123-45, Valledupar, Cesar</p>
+                                    <p class="small">Cerca al mercado central</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horario de Atención -->
+    <section class="py-5">
+        <div class="container">
+            <div class="card shadow-sm border-0">
+                <div class="card-body p-4">
+                    <h3 class="text-center text-success fw-bold mb-4">Horario de Atención</h3>
+                    <div class="row text-center">
+                        <div class="col-md-6 mb-3">
+                            <div class="p-3 bg-light rounded">
+                                <h5 class="text-success fw-bold">Lunes a Sábado</h5>
+                                <p class="mb-0 fs-4">8:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="p-3 bg-light rounded">
+                                <h5 class="text-success fw-bold">Domingos</h5>
+                                <p class="mb-0 fs-4">8:00 AM - 2:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-success">🥩 Salsamentaria Artesanal</h5>
+                    <p>Productos de calidad desde 1990. Tradición, sabor y frescura en cada producto.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-success">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="text-white text-decoration-none">Inicio</a></li>
+                        <li><a href="productos.html" class="text-white text-decoration-none">Productos</a></li>
+                        <li><a href="acerca-de.html" class="text-white text-decoration-none">Acerca de</a></li>
+                        <li><a href="contacto.html" class="text-white text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-success">Contacto</h5>
+                    <p class="mb-1">📞 Teléfono: +57 300 123 4567</p>
+                    <p class="mb-1">📧 Email: info@salsamentaria.com</p>
+                    <p class="mb-1">📍 Valledupar, Cesar, Colombia</p>
+                    <p class="mt-3 mb-0"><strong>Horario:</strong></p>
+                    <p class="mb-0">Lunes a Sábado: 8:00 AM - 6:00 PM</p>
+                    <p class="mb-0">Domingos: 8:00 AM - 2:00 PM</p>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="text-center">
+                <p class="mb-1">&copy; 2025 Salsamentaria Artesanal. Todos los derechos reservados.</p>
+                <p class="mb-0"><small>Visitantes: <span id="visit-counter">0</span></small></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

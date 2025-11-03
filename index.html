@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salsamentaria Artesanal - Productos de Calidad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-success text-white py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <h1 class="h3 mb-0">🥩 Salsamentaria Artesanal</h1>
+                </div>
+                <div class="col-md-8">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/productos.html">Productos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/acerca-de.html">Acerca de</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/carrito.html">
+                                        🛒 Carrito (<span id="cart-count">0</span>)
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center py-5" style="background: linear-gradient(135deg, #2d5016 0%, #4a7c2c 100%); color: white;">
+        <div class="container">
+            <h2 class="display-4 fw-bold mb-3">Productos Artesanales de la Mejor Calidad</h2>
+            <p class="lead mb-4">Embutidos, carnes frescas y productos tradicionales</p>
+            <a href="pages/productos.html" class="btn btn-light btn-lg">Ver Productos</a>
+        </div>
+    </section>
+
+    <!-- Características -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-box p-4">
+                        <h3 class="h5 text-success">🏆 Calidad Premium</h3>
+                        <p>Productos 100% artesanales elaborados con las mejores materias primas</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-box p-4">
+                        <h3 class="h5 text-success">🚚 Entrega Rápida</h3>
+                        <p>Enviamos a toda la ciudad manteniendo la cadena de frío</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-box p-4">
+                        <h3 class="h5 text-success">💯 Tradición</h3>
+                        <p>Recetas tradicionales transmitidas de generación en generación</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos Destacados -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 text-success">Productos Destacados</h2>
+            <div class="row" id="featured-products">
+                <!-- Los productos se cargarán con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorías -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 text-success">Nuestras Categorías</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card category-card text-center h-100">
+                        <div class="card-body">
+                            <h3 class="h4">🌭 Embutidos</h3>
+                            <p>Chorizos, salchichas, longanizas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card category-card text-center h-100">
+                        <div class="card-body">
+                            <h3 class="h4">🥩 Carnes Frescas</h3>
+                            <p>Res, cerdo, pollo premium</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card category-card text-center h-100">
+                        <div class="card-body">
+                            <h3 class="h4">🧈 Adobados</h3>
+                            <p>Carnes marinadas listas para cocinar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card category-card text-center h-100">
+                        <div class="card-body">
+                            <h3 class="h4">🥓 Especiales</h3>
+                            <p>Morcillas, butifarra, tocino</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-success">Salsamentaria Artesanal</h5>
+                    <p>Productos de calidad desde 1990</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-success">Contacto</h5>
+                    <p>📞 Teléfono: +57 300 123 4567<br>
+                    📧 Email: info@salsamentaria.com<br>
+                    📍 Valledupar, Cesar</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-success">Horario</h5>
+                    <p>Lunes a Sábado: 8:00 AM - 6:00 PM<br>
+                    Domingos: 8:00 AM - 2:00 PM</p>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Salsamentaria Artesanal. Todos los derechos reservados.</p>
+                <p class="mb-0"><small>Visitas: <span id="visit-counter">0</span></small></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
