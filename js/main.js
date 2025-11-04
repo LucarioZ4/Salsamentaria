@@ -6,7 +6,7 @@ const products = [
         price: 12000,
         category: "embutidos",
         description: "Chorizo tradicional elaborado con carne de cerdo seleccionada y especias naturales",
-        image: "https://source.unsplash.com/800x600/?chorizo"
+        image: "images/productos/chorizo-artesanal.jpg"
     },
     {
         id: 2,
@@ -14,7 +14,7 @@ const products = [
         price: 15000,
         category: "embutidos",
         description: "Longaniza especial con receta tradicional colombiana, perfecta para asados",
-        image: "https://source.unsplash.com/800x600/?longaniza,sausage"
+        image: "images/productos/longaniza-premium.jpg"
     },
     {
         id: 3,
@@ -22,7 +22,7 @@ const products = [
         price: 18000,
         category: "carnes",
         description: "Corte de res de primera calidad, ideal para bistec o carne asada",
-        image: "https://source.unsplash.com/800x600/?beef,steak"
+        image: "images/productos/carne-res-premium.jpg"
     },
     {
         id: 4,
@@ -30,7 +30,7 @@ const products = [
         price: 16000,
         category: "carnes",
         description: "Lomo de cerdo fresco y tierno, perfecto para hornear o asar",
-        image: "https://source.unsplash.com/800x600/?pork,loin"
+        image: "images/productos/lomo-cerdo.jpg"
     },
     {
         id: 5,
@@ -38,7 +38,7 @@ const products = [
         price: 10000,
         category: "especiales",
         description: "Butifarra tradicional de la costa caribeña colombiana",
-        image: "https://source.unsplash.com/800x600/?butifarra,sausage"
+        image: "images/productos/butifarra-costena.jpg"
     },
     {
         id: 6,
@@ -46,7 +46,7 @@ const products = [
         price: 9000,
         category: "especiales",
         description: "Morcilla artesanal con arroz y especias, receta de la casa",
-        image: "https://source.unsplash.com/800x600/?morcilla,blood+sausage"
+        image: "images/productos/morcilla-casera.jpg"
     },
     {
         id: 7,
@@ -54,7 +54,7 @@ const products = [
         price: 14000,
         category: "adobados",
         description: "Pechuga de pollo marinada con hierbas y especias secretas",
-        image: "https://source.unsplash.com/800x600/?marinated+chicken"
+        image: "images/productos/pollo-adobado.jpg"
     },
     {
         id: 8,
@@ -62,7 +62,7 @@ const products = [
         price: 20000,
         category: "adobados",
         description: "Costillas de cerdo marinadas listas para la parrilla",
-        image: "https://source.unsplash.com/800x600/?pork+ribs"
+        image: "images/productos/costillas-adobadas.jpg"
     },
     {
         id: 9,
@@ -70,7 +70,7 @@ const products = [
         price: 8000,
         category: "embutidos",
         description: "Salchichas hechas en casa sin conservantes ni aditivos",
-        image: "https://source.unsplash.com/800x600/?sausages"
+        image: "images/productos/salchichas-artesanales.jpg"
     },
     {
         id: 10,
@@ -78,7 +78,7 @@ const products = [
         price: 13000,
         category: "especiales",
         description: "Tocino artesanal ahumado con madera de nogal",
-        image: "https://source.unsplash.com/800x600/?bacon"
+        image: "images/productos/tocino-ahumado.jpg"
     },
     {
         id: 11,
@@ -86,7 +86,7 @@ const products = [
         price: 12000,
         category: "carnes",
         description: "Pechuga de pollo fresca y sin piel, ideal para dietas saludables",
-        image: "https://source.unsplash.com/800x600/?chicken+breast"
+        image: "images/productos/pechuga-pollo.jpg"
     },
     {
         id: 12,
@@ -94,7 +94,7 @@ const products = [
         price: 17000,
         category: "carnes",
         description: "Chuletas de cerdo tiernas y jugosas, corte premium",
-        image: "https://source.unsplash.com/800x600/?pork+chops"
+        image: "images/productos/chuletas-cerdo.jpg"
     }
 ];
 
