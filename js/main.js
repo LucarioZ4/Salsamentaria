@@ -6,7 +6,7 @@ const products = [
         price: 12000,
         category: "embutidos",
         description: "Chorizo tradicional elaborado con carne de cerdo seleccionada y especias naturales",
-        image: "images/productos/chorizo-artesanal.jpg"
+           image: "ChorizoAr.jpeg"
     },
     {
         id: 2,
@@ -14,7 +14,7 @@ const products = [
         price: 15000,
         category: "embutidos",
         description: "Longaniza especial con receta tradicional colombiana, perfecta para asados",
-        image: "images/productos/longaniza-premium.jpg"
+           image: "loganizapre.jpeg"
     },
     {
         id: 3,
@@ -22,7 +22,7 @@ const products = [
         price: 18000,
         category: "carnes",
         description: "Corte de res de primera calidad, ideal para bistec o carne asada",
-        image: "images/productos/carne-res-premium.jpg"
+           image: "CarneRes.jpeg"
     },
     {
         id: 4,
@@ -30,7 +30,7 @@ const products = [
         price: 16000,
         category: "carnes",
         description: "Lomo de cerdo fresco y tierno, perfecto para hornear o asar",
-        image: "images/productos/lomo-cerdo.jpg"
+           image: "lomodecerdo.jpeg"
     },
     {
         id: 5,
@@ -38,7 +38,7 @@ const products = [
         price: 10000,
         category: "especiales",
         description: "Butifarra tradicional de la costa caribeña colombiana",
-        image: "images/productos/butifarra-costena.jpg"
+           image: "images.jpeg"
     },
     {
         id: 6,
@@ -46,7 +46,7 @@ const products = [
         price: 9000,
         category: "especiales",
         description: "Morcilla artesanal con arroz y especias, receta de la casa",
-        image: "images/productos/morcilla-casera.jpg"
+           image: "morcilla.jpeg"
     },
     {
         id: 7,
@@ -54,7 +54,7 @@ const products = [
         price: 14000,
         category: "adobados",
         description: "Pechuga de pollo marinada con hierbas y especias secretas",
-        image: "images/productos/pollo-adobado.jpg"
+           image: "images (2).jpeg"
     },
     {
         id: 8,
@@ -62,7 +62,7 @@ const products = [
         price: 20000,
         category: "adobados",
         description: "Costillas de cerdo marinadas listas para la parrilla",
-        image: "images/productos/costillas-adobadas.jpg"
+           image: "costillacerdos.jpeg"
     },
     {
         id: 9,
@@ -70,7 +70,7 @@ const products = [
         price: 8000,
         category: "embutidos",
         description: "Salchichas hechas en casa sin conservantes ni aditivos",
-        image: "images/productos/salchichas-artesanales.jpg"
+           image: "images (1).jpeg"
     },
     {
         id: 10,
@@ -78,7 +78,7 @@ const products = [
         price: 13000,
         category: "especiales",
         description: "Tocino artesanal ahumado con madera de nogal",
-        image: "images/productos/tocino-ahumado.jpg"
+           image: "tocino.jpeg"
     },
     {
         id: 11,
@@ -86,7 +86,7 @@ const products = [
         price: 12000,
         category: "carnes",
         description: "Pechuga de pollo fresca y sin piel, ideal para dietas saludables",
-        image: "images/productos/pechuga-pollo.jpg"
+           image: "pechuga.jpeg"
     },
     {
         id: 12,
@@ -94,9 +94,20 @@ const products = [
         price: 17000,
         category: "carnes",
         description: "Chuletas de cerdo tiernas y jugosas, corte premium",
-        image: "images/productos/chuletas-cerdo.jpg"
+           image: "chuleta.jpeg"
     }
 ];
+
+// Construye la ruta local a la imagen dentro de images/productos/
+function imgPath(filename) {
+    if (!filename) return filename;
+    // Si ya es una URL completa o ruta absoluta, devolverla tal cual
+    if (filename.startsWith('http://') || filename.startsWith('https://') || filename.startsWith('/')) return filename;
+    const isInPages = location.pathname.includes('/pages/') || location.pathname.includes('\\pages\\');
+    const prefix = isInPages ? '../' : '';
+    return prefix + 'images/productos/' + filename;
+}
+
 
 // Carrito de compras
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -197,7 +208,7 @@ function loadFeaturedProducts() {
     container.innerHTML = featured.map(product => `
         <div class="col-md-4 mb-4">
             <div class="card h-100 shadow-sm">
-                <img src="${product.image}" loading="lazy" class="card-img-top" alt="${product.name}" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%27800%27 height=%27200%27><rect fill=%27%23f8f9fa%27 width=%27100%25%27 height=%27100%25%27/><text x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%2328a745%27 font-family=%27Segoe%20UI,Arial%27 font-size=%2720%27>Imagen%20no%20disponible</text></svg>'">
+                    <img src="${imgPath(product.image)}" loading="lazy" class="card-img-top" alt="${product.name}" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%27800%27 height=%27200%27><rect fill=%27%23f8f9fa%27 width=%27100%25%27 height=%27100%25%27/><text x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%2328a745%27 font-family=%27Segoe%20UI,Arial%27 font-size=%2720%27>Imagen%20no%20disponible</text></svg>'">
                 <div class="card-body">
                     <h5 class="card-title text-success">${product.name}</h5>
                     <p class="card-text">${product.description}</p>
@@ -234,7 +245,7 @@ function displayProducts(productsToShow) {
     container.innerHTML = productsToShow.map(product => `
         <div class="col-md-4 col-lg-3 mb-4">
             <div class="card h-100 shadow-sm">
-                <img src="${product.image}" loading="lazy" class="card-img-top" alt="${product.name}" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%27800%27 height=%27200%27><rect fill=%27%23f8f9fa%27 width=%27100%25%27 height=%27100%25%27/><text x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%2328a745%27 font-family=%27Segoe%20UI,Arial%27 font-size=%2720%27>Imagen%20no%20disponible</text></svg>'">
+                <img src="${imgPath(product.image)}" loading="lazy" class="card-img-top" alt="${product.name}" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%27800%27 height=%27200%27><rect fill=%27%23f8f9fa%27 width=%27100%25%27 height=%27100%25%27/><text x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%2328a745%27 font-family=%27Segoe%20UI,Arial%27 font-size=%2720%27>Imagen%20no%20disponible</text></svg>'">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-success">${product.name}</h5>
                     <p class="card-text text-muted small">${product.description}</p>
@@ -303,7 +314,7 @@ function loadCartItems() {
         <div class="card mb-3">
             <div class="row g-0">
                 <div class="col-md-3">
-                    <img src="${item.image}" loading="lazy" class="img-fluid rounded-start" alt="${item.name}" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27250%27><rect fill=%27%23f8f9fa%27 width=%27100%25%27 height=%27100%25%27/><text x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%2328a745%27 font-family=%27Segoe%20UI,Arial%27 font-size=%2716%27>Imagen%20no%20disponible</text></svg>'">
+                    <img src="${imgPath(item.image)}" loading="lazy" class="img-fluid rounded-start" alt="${item.name}" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27250%27><rect fill=%27%23f8f9fa%27 width=%27100%25%27 height=%27100%25%27/><text x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%2328a745%27 font-family=%27Segoe%20UI,Arial%27 font-size=%2716%27>Imagen%20no%20disponible</text></svg>'">
                 </div>
                 <div class="col-md-9">
                     <div class="card-body">
