@@ -6,7 +6,7 @@ const products = [
         price: 12000,
         category: "embutidos",
         description: "Chorizo tradicional elaborado con carne de cerdo seleccionada y especias naturales",
-           image: "ChorizoAr.jpeg"
+    image: "chorizo-ar.jpeg"
     },
     {
         id: 2,
@@ -14,7 +14,7 @@ const products = [
         price: 15000,
         category: "embutidos",
         description: "Longaniza especial con receta tradicional colombiana, perfecta para asados",
-           image: "loganizapre.jpeg"
+    image: "longaniza-pre.jpeg"
     },
     {
         id: 3,
@@ -22,7 +22,7 @@ const products = [
         price: 18000,
         category: "carnes",
         description: "Corte de res de primera calidad, ideal para bistec o carne asada",
-           image: "CarneRes.jpeg"
+    image: "carne-res.jpeg"
     },
     {
         id: 4,
@@ -30,7 +30,7 @@ const products = [
         price: 16000,
         category: "carnes",
         description: "Lomo de cerdo fresco y tierno, perfecto para hornear o asar",
-           image: "lomodecerdo.jpeg"
+    image: "lomo-cerdo.jpeg"
     },
     {
         id: 5,
@@ -38,7 +38,7 @@ const products = [
         price: 10000,
         category: "especiales",
         description: "Butifarra tradicional de la costa caribeña colombiana",
-           image: "images.jpeg"
+    image: "butifarra-costena.jpeg"
     },
     {
         id: 6,
@@ -46,7 +46,7 @@ const products = [
         price: 9000,
         category: "especiales",
         description: "Morcilla artesanal con arroz y especias, receta de la casa",
-           image: "morcilla.jpeg"
+    image: "morcilla.jpeg"
     },
     {
         id: 7,
@@ -54,7 +54,7 @@ const products = [
         price: 14000,
         category: "adobados",
         description: "Pechuga de pollo marinada con hierbas y especias secretas",
-           image: "images (2).jpeg"
+    image: "pollo-adobado.jpeg"
     },
     {
         id: 8,
@@ -62,7 +62,7 @@ const products = [
         price: 20000,
         category: "adobados",
         description: "Costillas de cerdo marinadas listas para la parrilla",
-           image: "costillacerdos.jpeg"
+    image: "costillas-cerdo.jpeg"
     },
     {
         id: 9,
@@ -70,7 +70,7 @@ const products = [
         price: 8000,
         category: "embutidos",
         description: "Salchichas hechas en casa sin conservantes ni aditivos",
-           image: "images (1).jpeg"
+    image: "salchichas.jpeg"
     },
     {
         id: 10,
@@ -78,7 +78,7 @@ const products = [
         price: 13000,
         category: "especiales",
         description: "Tocino artesanal ahumado con madera de nogal",
-           image: "tocino.jpeg"
+    image: "tocino.jpeg"
     },
     {
         id: 11,
@@ -86,7 +86,7 @@ const products = [
         price: 12000,
         category: "carnes",
         description: "Pechuga de pollo fresca y sin piel, ideal para dietas saludables",
-           image: "pechuga.jpeg"
+    image: "pechuga.jpeg"
     },
     {
         id: 12,
@@ -94,7 +94,7 @@ const products = [
         price: 17000,
         category: "carnes",
         description: "Chuletas de cerdo tiernas y jugosas, corte premium",
-           image: "chuleta.jpeg"
+    image: "chuletas-cerdo.jpeg"
     }
 ];
 
